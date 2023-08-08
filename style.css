@@ -574,7 +574,7 @@ footer span a:hover{
 }
 
 
-/* responsive media query start
+responsive media query start
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -699,7 +699,7 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
-} */
+}
 
 section .max-width .mycustomcoln{
  /* background-color: aqua;  */
