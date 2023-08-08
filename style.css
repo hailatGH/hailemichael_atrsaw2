@@ -272,10 +272,12 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "My brand";
 }
 .services .serv-content .card{
-    width: calc(33% - 20px);
+    /* width: calc(33% - 20px); */
+    width: 90%;
+    height: 400px;
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -284,33 +286,37 @@ section .title::after{
     transition: all 0.3s ease;
     margin-bottom: 50px;
 }
-.services .serv-content .card:hover{
+/* .services .serv-content .card:hover{
     background: crimson;
-}
+} */
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+/* .services .serv-content .card:hover .box{
     transform: scale(1.05);
-}
+} */
 .services .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+/* .services .serv-content .card:hover i{
     color: #fff;
-}
+} */
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.services .serv-content .card p {
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "My previous works";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -366,25 +372,37 @@ section .title::after{
     top: 0;
     background: crimson;
 }
-.skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
+.skills-content .right .python::before{
     width: 80%;
 }
-.skills-content .right .php::before{
+.skills-content .right .django::before{
+    width: 90%;
+}
+.skills-content .right .flask::before{
+    width: 90%;
+}
+.skills-content .right .js::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .node::before{
     width: 70%;
+}
+.skills-content .right .express::before{
+    width: 70%;
+}
+.skills-content .right .aws::before{
+    width: 85%;
+}
+.skills-content .right .azure::before{
+    width: 70%;
+}
+.skills-content .right .gcp::before{
+    width: 55%;
 }
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "What others say about me";
 }
 .teams .carousel .card{
     background: #222;
@@ -681,4 +699,41 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+section .max-width .mycustomcoln{
+ /* background-color: aqua;  */
+ /* display: flex; */
+ justify-content: center;
+ align-items: center;
+ /* width: 100%; */
+ /* height: 400px;   */
+}
+
+section .max-width .mycustomcoln .subclass {
+    width: 100%;
+    height: 40px;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+section .max-width .mycustomcoln .subclass a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+section .max-width .carousel .card p {
+    text-align: center;
+    /* text-justify: inter-word; */
+}
+
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
