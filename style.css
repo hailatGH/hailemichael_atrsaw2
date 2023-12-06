@@ -785,16 +785,17 @@ section .max-width .home-content .text-3 span{
     display: flex;
     margin-top: -30px;
     gap: 30px;
+    justify-content: center;
 }
 
-.links div {
-    width: 50%;
-    height: 50px;
+.links .res {
+    width: 100px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #20303F;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight:900;
     text-decoration: none;
 }
