@@ -270,12 +270,16 @@ section .title::after{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.teams .title::after{ 
     background: #111;
     content: "My brand";
 }
-.services .serv-content .card{
-    /* width: calc(33% - 20px); */
+
+.skills .serv-content {
+    gap: 20px;
+}
+.skills .serv-content .card{
+    width: calc(33% - 20px);
     width: 90%;
     height: 400px;
     background: #222;
@@ -285,30 +289,33 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 50px;
+    color: #fff;
 }
-/* .services .serv-content .card:hover{
+.skills .serv-content .card:hover{
     background: #20303F;
-} */
-.services .serv-content .card .box{
+    color: #fff;
+}
+.skills .serv-content .card .box{
     transition: all 0.3s ease;
 }
-/* .services .serv-content .card:hover .box{
+.skills .serv-content .card:hover .box{
     transform: scale(1.05);
-} */
-.services .serv-content .card i{
+}
+.skills .serv-content .card i{
     font-size: 50px;
-    color: #20303F;
+    /* color: #20303F; */
+    color: #fff;
     transition: color 0.3s ease;
 }
-/* .services .serv-content .card:hover i{
+.skills .serv-content .card:hover i{
     color: #fff;
-} */
-.services .serv-content .card .text{
+}
+.skills .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.services .serv-content .card p {
+.skills .serv-content .card p {
     text-align: justify;
     text-justify: inter-word;
 }
@@ -772,4 +779,28 @@ height: 500px;
 
 section .max-width .home-content .text-3 span{
     color: white;
+}
+
+.links {
+    display: flex;
+    margin-top: -30px;
+    gap: 30px;
+}
+
+.links div {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #20303F;
+    border-radius: 8px;
+    font-weight:900;
+    text-decoration: none;
+}
+.links div a {
+    color: white;
+}
+.links div:hover {
+    filter: brightness(.7);
 }
