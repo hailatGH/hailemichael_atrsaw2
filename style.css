@@ -789,7 +789,7 @@ section .max-width .home-content .text-3 span{
 }
 
 .links .res {
-    width: 100px;
+    width: 200px;
     height: 70px;
     display: flex;
     justify-content: center;
