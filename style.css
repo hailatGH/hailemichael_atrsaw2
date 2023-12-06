@@ -786,6 +786,7 @@ section .max-width .home-content .text-3 span{
     margin-top: -30px;
     gap: 30px;
     justify-content: center;
+    margin-top: -30px;
 }
 
 .links .res {
